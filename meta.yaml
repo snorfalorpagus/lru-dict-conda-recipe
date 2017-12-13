@@ -1,0 +1,28 @@
+package:
+  name: lru-dict
+  version: "1.1.6"
+
+source:
+  fn: lru-dict-1.1.6.tar.gz
+  url: https://pypi.python.org/packages/00/a5/32ed6e10246cd341ca8cc205acea5d208e4053f48a4dced2b1b31d45ba3f/lru-dict-1.1.6.tar.gz
+  md5: b33f54f1257ab541f4df4bacc7509f5a
+
+build:
+  number: 0
+
+requirements:
+  build:
+    - python
+    - setuptools
+
+  run:
+    - python
+
+test:
+  imports:
+    - lru
+
+about:
+  home: https://github.com/amitdev/lru-dict
+  license: MIT License
+  summary: 'An Dict like LRU container.'
